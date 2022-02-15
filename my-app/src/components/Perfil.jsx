@@ -6,7 +6,13 @@ class Perfil extends React.Component {
     constructor(props) {
         super(props);
         
-        this.nombreIntroducido;
+        this.nombreIntroducido=React.createRef();
+        this.apellidoIntroducido=React.createRef();
+        this.urlImagenIntroducido=React.createRef();
+        this.emailIntroducido=React.createRef();
+        this.contraseñaIntroducida=React.createRef();
+        this.contraseña2Introducida=React.createRef();
+
     }
 
 
@@ -71,7 +77,7 @@ class Perfil extends React.Component {
                                 <Form.Control
                                     type="password"
                                     placeholder="Contraseña"
-                                    ref={this.contraseñaIntroducida}
+                                    ref={this.contraseña2Introducida}
                                     className={this.claseLista}
                                 />
                                 <Form.Control.Feedback type="invalid">
