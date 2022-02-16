@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+#login_icon{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+#nav_icon{
+  width: 60px;
+  height: 60px;
+}
+
+#prueba{
+  background-color: #caf3ff;
+}
+
+#login-form{
+  background-color: azure;
+}
