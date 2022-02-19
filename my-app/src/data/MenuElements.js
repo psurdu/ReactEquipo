@@ -1,5 +1,7 @@
 import Login from "../components/Login";
 import Register from "../components/Register";
+import uuid from 'react-uuid';
+import Videos from "../components/Videos";
 
 export const MenuElements = [
     {
@@ -13,5 +15,11 @@ export const MenuElements = [
         path: '/register',
         title: 'Register',
         component: Register,
+    },
+    {
+        id:3,
+        path:'/videos',
+        title:'Videos',
+        component: Videos,
     }
 ]
