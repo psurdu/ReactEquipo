@@ -7,7 +7,6 @@ export default function App() {
   return (
     <Router>
       <NavigationBar />
-      <div>
           {MenuElements.map((item) => {
             return (
               <Route
@@ -18,7 +17,6 @@ export default function App() {
               />
             );
           })}
-      </div>
     </Router>
   );
 }
