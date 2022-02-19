@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ReactEquipo/static/css/main.02391b2b.css",
+    "main.js": "/ReactEquipo/static/js/main.c6a09933.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ReactEquipo/static/js/787.28cb0dcd.chunk.js",
+    "static/media/linuxIcon.png": "/ReactEquipo/static/media/linuxIcon.c5ea348605f7d9eefff5.png",
+    "index.html": "/ReactEquipo/index.html",
+    "main.02391b2b.css.map": "/ReactEquipo/static/css/main.02391b2b.css.map",
+    "main.c6a09933.js.map": "/ReactEquipo/static/js/main.c6a09933.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ReactEquipo/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02391b2b.css",
+    "static/js/main.c6a09933.js"
+  ]
+}
