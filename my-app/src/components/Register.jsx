@@ -137,6 +137,9 @@ class Register extends React.Component {
             </Container>
         );
     }
+    componentWillUnmount() {
+        localStorage.setItem('id',this.state.id);
+    }
 }
 
 export default Register;

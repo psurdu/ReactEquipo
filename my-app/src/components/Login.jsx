@@ -32,8 +32,8 @@ class Login extends React.Component {
                 this.setState({id:item.id});
                 this.claseEmail="";
                 this.clasePassword="";
-                
             }
+            return loginCorrecto;
         });
         if(!loginCorrecto){
             this.setState({id:0});
@@ -78,6 +78,11 @@ class Login extends React.Component {
             </>
         );
     }
+    componentWillUnmount() {
+        console.log(this.state.id);
+        localStorage.setItem('id',this.state.id);
+    }
 }
+
 
 export default Login;
