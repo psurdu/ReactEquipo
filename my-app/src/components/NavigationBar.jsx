@@ -1,4 +1,5 @@
 import React from "react";
+import uuid from 'react-uuid';
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { MenuElements } from "../data/MenuElements";
 import { Link } from "react-router-dom";
@@ -18,7 +19,7 @@ class NavigationBar extends React.Component {
                         <Nav className="me-auto">
                             {MenuElements.map((item) => {
                                 return (
-                                    <Nav.Link as={Link} to={item.path}>{item.title}</Nav.Link>
+                                    <Nav.Link key={uuid()} as={Link} to={item.path}>{item.title}</Nav.Link>
                                 )
                             })}
                         </Nav>

@@ -1,6 +1,5 @@
 import Login from "../components/Login";
 import Register from "../components/Register";
-import uuid from 'react-uuid';
 import Videos from "../components/Videos";
 
 export const MenuElements = [
