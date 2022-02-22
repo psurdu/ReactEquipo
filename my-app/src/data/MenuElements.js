@@ -1,6 +1,6 @@
 import Login from "../components/Login";
+import Perfil from "../components/Perfil";
 import Register from "../components/Register";
-import uuid from 'react-uuid';
 import Videos from "../components/Videos";
 
 export const MenuElements = [
@@ -21,5 +21,11 @@ export const MenuElements = [
         path:'/videos',
         title:'Videos',
         component: Videos,
+    },
+    {
+        id:4,
+        path:'/perfil',
+        title:'Perfil',
+        component: Perfil,
     }
 ]
