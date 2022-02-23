@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import Axios from 'axios';
-
+import { Link } from 'react-router-dom';
 class Perfil extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +24,7 @@ class Perfil extends React.Component {
         this.claseSurname="";
         this.claseAvatar=""
     }
-    async componentDidMount() {
+    componentDidMount() {
         this.setState({ id: localStorage.getItem('id') });
         this.cargarUsuario();
     }
@@ -104,7 +104,7 @@ class Perfil extends React.Component {
                             <Card.Body>
                                 <Card.Title>{this.state.datosUsuario.nombre}</Card.Title>
                                 <Card.Subtitle className="mb-3 text-muted">{this.state.datosUsuario.email}</Card.Subtitle>
-                                <Button variant="primary" onClick={this.onClickCerrarSesion.bind(this)}>Cerrar sesión</Button>
+                                <Button variant="primary" onClick={this.onClickCerrarSesion.bind(this)} as={Link} to='/'>Cerrar sesión</Button>
                             </Card.Body>
                         </Card>
                     </Col>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import icon from '../resources/images/linuxIcon.png';
+import { Link } from 'react-router-dom';
 
 class Login extends React.Component {
     constructor(props) {
@@ -66,7 +67,7 @@ class Login extends React.Component {
                                     <Button variant="primary" size="lg" onClick={this.loginUsuario.bind(this)}>
                                         Login
                                     </Button>
-                                    <Button variant="info" size="lg">
+                                    <Button variant="info" size="lg" as={Link} to='/register'>
                                         Register
                                     </Button>
                                 </div>
