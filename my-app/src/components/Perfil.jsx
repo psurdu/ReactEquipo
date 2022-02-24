@@ -95,6 +95,14 @@ class Perfil extends React.Component {
 
     }
     render() {
+        if(this.state.id===''||this.state.id===null||this.state.id===undefined){
+            return (
+                <Container id="perfil">
+                    <h1>Tienes que iniciar sesión o regístrate para editar el perfil</h1>
+                </Container>
+                
+            );
+        }else{
         return (
             <Container id="perfil">
                 <Row>
@@ -163,6 +171,7 @@ class Perfil extends React.Component {
                 </Row>
             </Container>
         );
+        }
     }
 
 }
