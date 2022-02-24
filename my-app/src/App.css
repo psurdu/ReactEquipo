@@ -57,3 +57,14 @@
 #login-form{
   background-color: azure;
 }
+
+#bienvenida {
+  background-color: #caf3ff;
+}
+
+#bienvenida-row1 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

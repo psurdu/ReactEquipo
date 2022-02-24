@@ -2,6 +2,7 @@ import Login from "../components/Login";
 import Perfil from "../components/Perfil";
 import Register from "../components/Register";
 import Videos from "../components/Videos";
+import Bienvenida from "../components/Bienvenida";
 
 export const MenuElements = [
     {
@@ -28,5 +29,10 @@ export const MenuElements = [
         title: 'Register',
         component: Register,
     },
-
+    {
+        id: 4,
+        path: '/bienvenida',
+        title: 'Bienvenida',
+        component: Bienvenida,
+    }
 ];
