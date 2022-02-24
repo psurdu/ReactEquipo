@@ -87,8 +87,9 @@ class Perfil extends React.Component {
                 email: this.state.emailMessage,
                 password: this.state.passwordMessage,
                 avatar: this.state.avatar,
+            }).then(res => {
+                this.setState({ datosUsuario: res.data })
             });
-            this.cargarUsuario();
         }else{
             this.setState({done:false});
         }
