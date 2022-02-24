@@ -18,9 +18,14 @@ class NavigationBar extends React.Component {
                     <img className="icon-img" id="nav_icon" src={icon} alt="icon" />
                         <Nav className="me-auto">
                             {MenuElements.map((item) => {
-                                return (
-                                    <Nav.Link key={uuid()} as={Link} to={item.path}>{item.title}</Nav.Link>
-                                )
+                                if(item.title!=='Register'){
+                                     return (
+                                        <Nav.Link key={uuid()} as={Link} to={item.path}>{item.title}</Nav.Link>
+                                    )   
+                                }else{
+                                    return ('')
+                                }
+                                
                             })}
                         </Nav>
                     </Container>
