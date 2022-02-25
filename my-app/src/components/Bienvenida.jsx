@@ -1,23 +1,26 @@
 import React from "react";
 import { Col, Card, Image, Row, Container } from "react-bootstrap";
-import icon from '../resources/images/linuxIcon.png';
 
 class Bienvenida extends React.Component {
     constructor(props) {
         super(props);
         this.url = "https://6214b07389fad53b1f1b76cf.mockapi.io/users/";
         this.state = {
-            datosUsuario: ''
+            datosUsuario: '',
+            id:props.id,
         }
     }
 
     componentDidMount() {
-        this.setState({ id: localStorage.getItem('id') });
+        let idLS=localStorage.getItem('id');
+        if(idLS!==''||idLS!==null||idLS!==undefined){
+            this.setState({ id: idLS });
+        }
         this.cargarUsuario();
     }
 
     async cargarUsuario() {
-        const response = await fetch(this.url + localStorage.getItem('id'));
+        const response = await fetch(this.url + this.state.id);
         const responseData = await response.json();
         this.setState({ datosUsuario: responseData })
     }
