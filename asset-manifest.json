@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.da6b69ae.css",
-    "main.js": "/static/js/main.1dd1e8ef.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/linuxIcon.png": "/static/media/linuxIcon.c5ea348605f7d9eefff5.png",
-    "index.html": "/index.html",
-    "main.da6b69ae.css.map": "/static/css/main.da6b69ae.css.map",
-    "main.1dd1e8ef.js.map": "/static/js/main.1dd1e8ef.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/ReactEquipo/static/css/main.da6b69ae.css",
+    "main.js": "/ReactEquipo/static/js/main.91267eef.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ReactEquipo/static/js/787.28cb0dcd.chunk.js",
+    "static/media/linuxIcon.png": "/ReactEquipo/static/media/linuxIcon.c5ea348605f7d9eefff5.png",
+    "index.html": "/ReactEquipo/index.html",
+    "main.da6b69ae.css.map": "/ReactEquipo/static/css/main.da6b69ae.css.map",
+    "main.91267eef.js.map": "/ReactEquipo/static/js/main.91267eef.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ReactEquipo/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da6b69ae.css",
-    "static/js/main.1dd1e8ef.js"
+    "static/js/main.91267eef.js"
   ]
 }
