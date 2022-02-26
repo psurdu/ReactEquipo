@@ -22,7 +22,7 @@ export default class Videos extends React.Component {
 
     searchChannels = async () => {
         console.log('b', this.channelname.current.value)
-        const response = await fetch(API_URL_SEARCH_CHANNEL + this.channelname.current.value + API_KEY).then(console.log('asdasdas',"se ha compledato el fecht"));
+        const response = await fetch(API_URL_SEARCH_CHANNEL + this.channelname.current.value + API_KEY).then(console.log('asdasdas', "se ha compledato el fecht"));
         const responseData = await response.json();
         console.log('b2', responseData.items);
         this.setState({
@@ -70,7 +70,9 @@ export default class Videos extends React.Component {
             return (
                 <Container>
                     <Row>
-                        <SelectorCanal channelname={this.channelname} seach={this.searchChannels} />
+                        <Col>
+                            <SelectorCanal channelname={this.channelname} seach={this.searchChannels} />
+                        </Col>
                     </Row>
                 </Container>
             );
