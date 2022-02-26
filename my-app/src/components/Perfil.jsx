@@ -96,7 +96,7 @@ class Perfil extends React.Component {
 
     }
     render() {
-        if(this.state.id===''||this.state.id===null||this.state.id===undefined){
+        if(this.state.id===''||this.state.id===null||this.state.id===undefined||this.state.id==='null'){
             return (
                 <Container id="perfil">
                     <h1>Tienes que iniciar sesión o regístrate para editar el perfil</h1>

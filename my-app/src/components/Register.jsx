@@ -77,7 +77,7 @@ class Register extends React.Component {
     }
 
     render() {
-        if (this.state.id === 0 || this.state.id === '' || this.state.id === null || this.state.id === undefined) {
+        if (this.state.id === 0 || this.state.id === '' || this.state.id === null || this.state.id === undefined||this.state.id==='null') {
             return (
                 <Container>
                     <Row className="mt-5">
